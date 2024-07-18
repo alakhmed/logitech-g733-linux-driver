@@ -75,7 +75,7 @@ int main(int argc, char* argv[]) {
     // Open the device using the VID, PID,
     // and optionally the Serial number.
     // Get the data executing `lsusb` command
-    handle = hid_open(0x46d, 0xab5, NULL);
+    handle = hid_open(0x46d, 0xafe, NULL);
     if (!handle) {
         printf("Unable to open device\n");
         hid_exit();
